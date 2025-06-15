@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Projects</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Portfolio</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </div>
+    </nav>
+
+    <main>
+        <section class="projects-section">
+            <h1>My Projects</h1>
+            <div class="projects-grid">
+                <div class="project-card" data-project="1">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&auto=format&fit=crop&q=60" alt="E-commerce Website">
+                    <h3>E-commerce Website</h3>
+                    <p>A full-featured online shopping platform with user authentication and payment integration.</p>
+                    <button class="view-project">View Details</button>
+                </div>
+                <div class="project-card" data-project="2">
+                    <img src="https://images.unsplash.com/photo-1540350394557-8d14678e7f91?w=800&auto=format&fit=crop&q=60" alt="Task Management App">
+                    <h3>Task Management App</h3>
+                    <p>A productivity application for managing tasks and projects with real-time updates.</p>
+                    <button class="view-project">View Details</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <h2 id="modalTitle"></h2>
+                <img id="modalImage" src="" alt="Project Image">
+                <p id="modalDescription"></p>
+                <div class="project-details">
+                    <h3>Technologies Used:</h3>
+                    <ul id="modalTech"></ul>
+                    <h3>Features:</h3>
+                    <ul id="modalFeatures"></ul>
+                </div>
+                <a href="#" id="modalLink" class="project-link" target="_blank">View Live Project</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+</html> 
